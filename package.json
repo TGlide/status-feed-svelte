@@ -27,5 +27,13 @@
 		"typescript": "^4.9.3",
 		"vite": "^4.0.0"
 	},
-	"type": "module"
+	"type": "module",
+	"dependencies": {
+		"@appwrite.io/pink": "0.0.0-rc4",
+		"@appwrite.io/pink-icons": "0.0.0-rc4",
+		"@fontsource/inter": "^4.5.14",
+		"@fontsource/poppins": "^4.5.10",
+		"@fontsource/source-code-pro": "^4.5.12",
+		"appwrite": "^10.2.0"
+	}
 }

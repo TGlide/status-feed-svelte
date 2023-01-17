@@ -1,2 +1,6 @@
-<h1>Welcome to SvelteKit</h1>
-<p>Visit <a href="https://kit.svelte.dev">kit.svelte.dev</a> to read the documentation</p>
+<div
+	class="container"
+	style="border: 1px solid hsl(var(--color-neutral-100)); border-radius: var(--border-radius-small);"
+>
+	<p class="text u-margin-block-start-8">Container</p>
+</div>
