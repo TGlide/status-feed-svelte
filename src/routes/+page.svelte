@@ -1,4 +1,6 @@
 <script lang="ts">
+	import IconPicker from '$components/IconPicker.svelte';
+
 	type Status = {
 		icon: string;
 		name: string;
@@ -70,6 +72,9 @@
 						placeholder="👋 Good morning!"
 						required
 					/>
+				</li>
+				<li class="form-item">
+					<IconPicker label="Icon" name="icon" />
 				</li>
 			</ul>
 		</div>
