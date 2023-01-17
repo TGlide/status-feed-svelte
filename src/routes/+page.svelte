@@ -25,10 +25,10 @@
 </script>
 
 <div class="container">
-	<button class="button is-secondary">Add status</button>
+	<button class="button">Add status</button>
 	<div class="u-flex u-flex-vertical u-gap-16 u-margin-block-start-32">
 		{#each mockStatus as status}
-			<div class="box u-flex u-cross-center u-gap-12">
+			<div class="box u-flex u-cross-center u-gap-24">
 				<div class="icon-wrapper">
 					<span class={`icon-${status.icon}`} />
 				</div>
@@ -50,7 +50,8 @@
 		width: var(--size);
 		height: var(--size);
 
-		background-color: hsl(var(--color-neutral-30));
+		background-color: hsla(var(--color-neutral-400));
 		border-radius: var(--border-radius-circular);
+		color: hsl(var(--color-primary-100));
 	}
 </style>
