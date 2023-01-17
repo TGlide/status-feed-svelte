@@ -46,20 +46,42 @@
 <dialog class="modal" bind:this={modalEl}>
 	<form class="modal-form" method="dialog">
 		<header class="modal-header">
-			<div class="avatar is-color-orange is-medium">
-				<span class="icon-exclamation" aria-hidden="true" />
-			</div>
-			<h4 class="modal-title heading-level-5">Modal title</h4>
-			<button class="x-button" aria-label="Close modal">
+			<h4 class="modal-title heading-level-5">Add status</h4>
+			<button
+				class="x-button"
+				aria-label="Close modal"
+				on:click|preventDefault={() => modalEl?.close()}
+			>
 				<span class="icon-x" aria-hidden="true" />
 			</button>
 		</header>
-		<div class="modal-content u-small">Modal label text.</div>
+		<div class="modal-content u-small">
+			<ul class="form-list">
+				<li class="form-item">
+					<label class="label is-required" for="name">Name</label>
+					<input type="text" class="input-text" name="name" placeholder="Jane Doe" required />
+				</li>
+				<li class="form-item">
+					<label class="label is-required" for="name">Text</label>
+					<input
+						type="text"
+						class="input-text"
+						name="text"
+						placeholder="👋 Good morning!"
+						required
+					/>
+				</li>
+			</ul>
+		</div>
 		<div class="modal-footer">
 			<div class="u-flex u-main-end u-gap-16">
-				<button class="button is-text"><span class="text">Button</span></button><button
-					class="button is-secondary"><span class="text">Button</span></button
-				>
+				<button class="button is-text" on:click|preventDefault={() => modalEl?.close()}>
+					<span class="text">Cancel</span>
+				</button>
+				<button class="button is-secondary">
+					<span class="icon-plus" aria-hidden="true" />
+					<span class="text">Add</span>
+				</button>
 			</div>
 		</div>
 	</form>
